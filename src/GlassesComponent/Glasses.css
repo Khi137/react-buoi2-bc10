@@ -1,0 +1,93 @@
+
+.grid{
+    padding-top: 5%;
+}
+navbar {
+
+  }
+
+  .navbar h1 {
+    padding-left: 30%;
+
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../public/ImageSrc/glassesImage/background.jpg');
+    background-size: contain;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .row2 {
+    grid-row: span 2;
+  }
+
+  .cell {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .merge {
+    grid-column: span 2;
+    text-align: left;
+    display: flex; /* Sử dụng display flex */
+    flex-direction: row; /* Sắp xếp các mục theo hàng ngang */
+    flex-wrap: wrap; 
+  }
+
+  .glasses-img {
+    width: 200px;
+    height: 150px;
+    margin: 50px;
+    object-fit: contain;
+    border: 1px solid black;
+  }
+
+  .model-img {
+    width: 300px;
+  
+  }
+
+
+
+  .img-overlay {
+    width: 200px;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    z-index: 2; 
+    opacity: 0.7;
+  }
+
+  
+  .text-overlay {
+    height: 150px;
+    max-height: 150px;
+    width: 300px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    z-index: 2; 
+    text-align: left;
+
+  }
+
+  .glass-name
+  {
+    color : blue;
+    font-size: 20px;
+  }
